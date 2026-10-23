@@ -26,3 +26,15 @@ int main (int argc, char *argv[]){
   }
 
 }
+
+int parseFlag(char *flag[]){
+
+  if(strcmp(flag[],'-t')){
+    flag.title = TRUE;
+  }else if(strcmp(flag[],'-m')){
+    flag.body = FALSE;
+  }
+
+  return 0;
+
+}
